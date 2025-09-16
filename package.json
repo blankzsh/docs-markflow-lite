@@ -1,0 +1,33 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vite-pwa/vitepress": "^1.0.0",
+    "@vueuse/core": "^13.9.0",
+    "markdown-it-abbr": "^2.0.0",
+    "markdown-it-container": "^4.0.0",
+    "markdown-it-deflist": "^3.0.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-ins": "^4.0.0",
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-sub": "^2.0.0",
+    "markdown-it-sup": "^2.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "vite-plugin-pwa": "^1.0.3",
+    "vite-plugin-sitemap": "^0.8.2",
+    "vitepress": "^1.6.4",
+    "vitepress-plugin-google-analytics": "^1.0.2",
+    "vitepress-plugin-rss": "^0.3.1"
+  }
+}

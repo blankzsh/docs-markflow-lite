@@ -1,0 +1,62 @@
+{
+  "name": "MarkFlow Lite",
+  "short_name": "MarkFlow",
+  "description": "A pure front-end online Markdown editor with real-time preview, math formulas, and flowcharts support.",
+  "theme_color": "#3eaf7c",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icon-72x72.svg",
+      "sizes": "72x72",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-96x96.svg",
+      "sizes": "96x96",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-144x144.svg",
+      "sizes": "144x144",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192x192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities", "education"],
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "新建文档",
+      "short_name": "新建",
+      "description": "快速创建新的 Markdown 文档",
+      "url": "/?action=new",
+      "icons": [{ "src": "/icon-96x96.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "查看文档",
+      "short_name": "文档",
+      "description": "查看文档和使用指南",
+      "url": "/guide/",
+      "icons": [{ "src": "/icon-96x96.svg", "sizes": "96x96" }]
+    }
+  ]
+}

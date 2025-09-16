@@ -1,0 +1,14 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="96" height="96" rx="12" fill="#3eaf7c"/>
+  <rect x="8" y="8" width="80" height="80" rx="8" fill="white"/>
+  
+  <!-- Markdown lines -->
+  <rect x="24" y="24" width="48" height="4" rx="2" fill="#3eaf7c"/>
+  <rect x="24" y="36" width="36" height="4" rx="2" fill="#3eaf7c"/>
+  <rect x="24" y="48" width="48" height="4" rx="2" fill="#3eaf7c"/>
+  <rect x="24" y="60" width="24" height="4" rx="2" fill="#3eaf7c"/>
+  <rect x="24" y="72" width="48" height="4" rx="2" fill="#3eaf7c"/>
+  
+  <!-- Arrow/cursor -->
+  <path d="M66 36L78 48L66 60" stroke="#3eaf7c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
