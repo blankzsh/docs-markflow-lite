@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* 美化 VitePress 左侧侧边栏 */
 .VPSidebar {
   background: #fff;

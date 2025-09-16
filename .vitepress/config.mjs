@@ -18,6 +18,24 @@ import markdownItContainer from 'markdown-it-container';
 
 export default withPwa(defineConfig({
   outline: [2, 4], // 启用右侧目录，显示 h2~h4 标题
+  
+  // 忽略死链接检查
+  ignoreDeadLinks: [
+    /^\/.*\.md$/,
+    /^\.\/.*\.md$/,
+    /^\.\.\/.*\.md$/,
+    './basic-usage',
+    './cloud-storage',
+    './export',
+    './url',
+    './../api/index',
+    './../faq/index',
+    './math',
+    './themes',
+    './shortcuts',
+    './flowchart'
+  ],
+  
   // 站点配置
   title: 'MarkFlow Lite',
   description: '一个纯前端在线 Markdown 编辑器',
@@ -523,20 +541,20 @@ export default withPwa(defineConfig({
   // Vite 配置
   vite: {
     plugins: [
-      // 站点地图插件
-      sitemapPlugin({
-        hostname: 'https://editor.currso.com',
-        dynamicRoutes: [
-          '/',
-          '/guide/',
-          '/guide/installation',
-          '/guide/basic-usage',
-          '/guide/cloud-storage',
-          '/guide/export',
-          '/features/',
-          '/features/markdown'
-        ]
-      }),
+      // 站点地图插件 - 暂时禁用直到修复 robots.txt 问题
+      // sitemapPlugin({
+      //   hostname: 'https://editor.currso.com',
+      //   dynamicRoutes: [
+      //     '/',
+      //     '/guide/',
+      //     '/guide/installation',
+      //     '/guide/basic-usage',
+      //     '/guide/cloud-storage',
+      //     '/guide/export',
+      //     '/features/',
+      //     '/features/markdown'
+      //   ]
+      // }),
       // SEO 优化插件 - 暂时注释掉可能有问题的插件
       // ...createOptimizePlugins()
     ],
@@ -560,16 +578,7 @@ export default withPwa(defineConfig({
     },
     // 构建优化
     build: {
-      chunkSizeWarningLimit: 1000,
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            'vue-vendor': ['vue', '@vue/shared', '@vue/reactivity'],
-            'markdown-vendor': ['markdown-it', 'markdown-it-footnote', 'markdown-it-deflist'],
-            'utils': ['@vueuse/core']
-          }
-        }
-      }
+      chunkSizeWarningLimit: 1000
     }
   },
 

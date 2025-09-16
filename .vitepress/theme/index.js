@@ -1,7 +1,7 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
-import enhanceApp from './enhance.js'
+// import customEnhanceApp from './enhance.js'
 import Comment from './components/Comment.vue'
 import BackToTop from './components/BackToTop.vue'
 import ReadingProgress from './components/ReadingProgress.vue'
@@ -25,7 +25,7 @@ export default {
     app.component('ReadingProgress', ReadingProgress)
     
     // 调用增强功能
-    enhanceApp({ app, router, siteData })
+    // customEnhanceApp({ app, router, siteData })
     
     // 添加路由守卫
     router.onBeforeRouteChange = (to) => {
