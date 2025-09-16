@@ -17,7 +17,7 @@
         </a>
         
         <a 
-          href="mailto:team@markflow.com" 
+          href="mailto:shell7@petalmail.com" 
           class="contact-link email"
         >
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

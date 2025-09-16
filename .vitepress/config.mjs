@@ -430,7 +430,7 @@ export default withPwa(defineConfig({
     
     // 编辑链接
     editLink: {
-      pattern: 'https://github.com/blankzsh/markflow-lite/edit/main/docs/:path',
+      pattern: 'https://github.com/blankzsh/docs-markflow-lite/edit/main/:path',
       text: '在 GitHub 上编辑此页'
     },
     
@@ -558,6 +558,9 @@ export default withPwa(defineConfig({
       // SEO 优化插件 - 暂时注释掉可能有问题的插件
       // ...createOptimizePlugins()
     ],
+    server: {
+      host: '0.0.0.0'
+    },
     // 优化配置
     optimizeDeps: {
       include: [
